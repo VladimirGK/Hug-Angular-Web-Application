@@ -8,7 +8,7 @@ Sample Hug with Angular web app.
 
 $ pip install hug
 
-### Angular dependecies
+### Angular dependencies
 
 $ npm install
 
