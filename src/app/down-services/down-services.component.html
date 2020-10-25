@@ -1,0 +1,23 @@
+<table class="table table-striped" *ngIf="!isEmptyObject(response_json); else elseBlock">
+  <thead>
+    <tr>
+      <th scope="col">service_id</th>
+      <th scope="col">startTime</th>
+      <th scope="col">duration</th>
+      <th scope="col">endTime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let key of response_json">
+      <td>{{key.service_id}}</td>
+      <td>{{key.startTime}}</td>
+      <td>{{key.duration}}</td>
+      <td>{{key.endTime}}</td>
+    </tr>
+  </tbody>
+</table>
+<ng-template #elseBlock>
+  <div class="alert alert-success" role="alert">
+    No Down Services Found!
+  </div>
+</ng-template>

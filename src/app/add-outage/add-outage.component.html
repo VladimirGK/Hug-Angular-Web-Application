@@ -1,0 +1,15 @@
+  <div class="form-group">
+    <label>Service_ID</label>
+    <input [(ngModel)]="Service_ID" type="text" class="form-control" placeholder="Enter Service_ID">
+  </div>
+  <div class="form-group">
+    <label>Duration</label>
+    <input [(ngModel)]="Duration" type="text" class="form-control"  placeholder="Enter Duration">
+  </div>
+  <div class="form-group">
+    <label >Date and time</label>
+    <div>
+      <input [(ngModel)]="Start_time" class="form-control" type="datetime-local" value="2011-08-19T13:45:00">
+    </div>
+  </div>
+  <button (click)="onSubmit()" type="submit" class="btn btn-primary">Submit</button>
